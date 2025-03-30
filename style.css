@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    color: #f5f5f5;
+    z-index: 1000;
+    background: #1d2142; /* Placeholder; adjust color later */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.head-logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 20px;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #FFF; /* Placeholder; adjust color later */
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #555; /* Placeholder; adjust color later */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    background: #fff; /* Placeholder; adjust color later */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 600px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none; /* Arcadia uses sentence case in dropdowns */
+    color: #000; /* Placeholder; adjust color later */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #f5f5f5; /* Placeholder; adjust color later */
+    color: #555; /* Placeholder; adjust color later */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.login-signup {
+    display: flex;
+    gap: 15px;
+}
+
+.login-signup button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #FFF; /* Placeholder; adjust color later */
+    background: transparent;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.login-signup button:hover {
+    background: #000; /* Placeholder; adjust color later */
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    color: white;
+    background-color: #111536;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.left {
+    width: 50%;
+    min-width: 300px;
+}
+
+.right {
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.company-name {
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero-desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-primary {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    background: #fff; /* Placeholder; adjust color later */
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-primary:hover {
+    background: #fff; /* Placeholder; adjust color later */
+    color: black;
+}
+
+.cta-secondary {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: 1px solid #fff; /* Placeholder; adjust color later */
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background: #000; /* Placeholder; adjust color later */
+    color: #fff;
+}
+
+/* About Section */
+.about, .solutions, .industries {
+
+    padding: 80px 5%;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solutions{
+    background-color: #111536;
+    max-width: 100%;
+}
+
+.solutions #subtitle {
+    color: #fff;
+}
+
+.solutions #description {
+    color: #fff;
+}
+
+#subtitle {
+    color: #372ee2;
+    font-size: 32px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#description {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 800px;
+    /* margin: 20px auto 40px; */
+}
+
+/* About Cards */
+.about-card-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    min-width: 280px;
+    padding: 40px 30px;
+    background-color: #fff; /* Placeholder; adjust color later */
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #372ee2;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Industries Section */
+.industry-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.industry-list li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.feedback{
+    padding: 80px 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 5%;
+    text-align: left;
+}
+
+.l-side{
+    margin-top: 5%;
+    padding: 20px 2.5%;
+    /* background-color: #2edce2; */
+    width: 60%;
+    min-width: 300px;
+}
+
+.numbers{
+    margin-top: 5%;
+    display: flex;
+    gap: 100px;
+}
+
+#num{
+    font-size: 44px;
+    font-weight: 700;
+    color: #2edce2;
+}
+
+.r-side{
+
+    background-color: #2edce2;
+    justify-content: flex-end;
+    top: 0;
+    width: 40%;
+    height: 420px;
+    min-width: 300px;
+    display: flex;
+
+}
+
+#dotlottie-canvas{
+    margin-top: -20%;;
+}
+
+/* Footer */
+footer {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .company-name {
+        font-size: 48px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .dropdown-menu {
+        min-width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .nav {
+        margin: 10px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav li {
+        margin: 10px 15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none; /* Disable hover on small screens */
+    }
+
+    .dropdown:active .dropdown-menu {
+        display: block; /* Show on click/tap instead */
+    }
+
+    .company-name {
+        font-size: 36px;
+    }
+
+    .slogan {
+        font-size: 16px;
+    }
+
+    .about, .solutions, .industries {
+        padding: 60px 5%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head-logo {
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .login-signup button {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .company-name {
+        font-size: 28px;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+
+    #subtitle {
+        font-size: 24px;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+}
