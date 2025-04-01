@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCS Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head-logo" onclick="goToHome()">SCS</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+          </div>
+        <ul class="nav">
+            <li class="dropdown">
+                <a href="solution.html">Solutions &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/solution/SIEM.HTML"> <i class="fa-solid fa-shield" id="icon-head"></i> SIEM Detection & Response</a></li>
+                    <li><a href="/solution/endpoint.html"> <i class="fa-brands fa-buffer" id="icon-head"></i> Endpoint Security</a></li>
+                    <li><a href="/solution/netwrok.html"><i class="fa-solid fa-server" id="icon-head"></i> Network Detection & Response</a></li>
+                    <li><a href="/solution/detection.html"><i class="fa-solid fa-database" id="icon-head"></i>Data Detection & Response</a></li>
+                    <li><a href="solution/penetration.html"><i class="fa-solid fa-vial-virus" id="icon-head"></i>Intelligence Detection & Response</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Platform &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="platform.html"> <i class="fa-brands fa-webflow" id="icon-head"></i >Platform Overview</a></li>
+                    <li><a href="/platform/incident.html"><i class="fa-solid fa-cubes" id="icon-head"></i>Incident Response</a></li>
+                    <li><a href="/platform/risk.html"> <i class="fa-solid fa-check-to-slot" id="icon-head"></i>Risk Management</a></li>
+
+                </ul>
+            </li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="company.html">Company</a></li>
+        </ul>
+        <div class="login-signup">
+            <button class="login">Contact Us</button>
+            <button class="signup">Request a Demo</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="left">
+            <h1 class="company-name">Endpoint Detection &    <span id="highlight">Response</span></h1>
+            <p class="hero-desc">Expert support and protection from risks related to your endpoints including 24/7/365 real-time monitoring, detection, and response.</p>
+
+            <div class="hero-buttons">
+                <button class="cta-primary">Get a Quote</button>
+            </div>
+        </div>
+        <div class="right" id="sol-r">            <div id="dotlottie-canvas" style="width: 600px; height: 400px;"></div></div>
+    </section>

@@ -398,6 +398,16 @@ header {
     border-radius: 12px;
 }
 
+/*SIEM.HTMl close here */
+
+/*data.HTMl starts here */
+
+#data-about{
+    background-color: white;
+}
+
+
+
 /* Industries Section */
 .industry-list {
     display: flex;

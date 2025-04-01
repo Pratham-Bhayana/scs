@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCS Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head-logo" onclick="goToHome()">SCS</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+          </div>
+        <ul class="nav">
+            <li class="dropdown">
+                <a href="solution.html">Solutions &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/solution/SIEM.HTML"> <i class="fa-solid fa-shield" id="icon-head"></i> SIEM Detection & Response</a></li>
+                    <li><a href="/solution/endpoint.html"> <i class="fa-brands fa-buffer" id="icon-head"></i> Endpoint Security</a></li>
+                    <li><a href="/solution/netwrok.html"><i class="fa-solid fa-server" id="icon-head"></i> Network Detection & Response</a></li>
+                    <li><a href="/solution/detection.html"><i class="fa-solid fa-database" id="icon-head"></i>Data Detection & Response</a></li>
+                    <li><a href="/solution/penetration.html"><i class="fa-solid fa-vial-virus" id="icon-head"></i>Intelligence Detection & Response</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Platform &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="platform.html"> <i class="fa-brands fa-webflow" id="icon-head"></i >Platform Overview</a></li>
+                    <li><a href="/platform/incident.html"><i class="fa-solid fa-cubes" id="icon-head"></i>Incident Response</a></li>
+                    <li><a href="/platform/risk.html"> <i class="fa-solid fa-check-to-slot" id="icon-head"></i>Risk Management</a></li>
+
+                </ul>
+            </li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="company.html">Company</a></li>
+        </ul>
+        <div class="login-signup">
+            <button class="login">Contact Us</button>
+            <button class="signup">Request a Demo</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="left">
+            <h1 class="company-name">Data Detection &    <span id="highlight">Response</span></h1>
+            <p class="hero-desc">Expert support and protection from risks related to your endpoints including 24/7/365 real-time monitoring, detection, and response.</p>
+
+            <div class="hero-buttons">
+                <button class="cta-primary">Get a Quote</button>
+            </div>
+        </div>
+        <div class="right" id="sol-r">            <div id="dotlottie-canvas" style="width: 600px; height: 400px;"></div></div>
+    </section>
+
+    <section class="about" id="siem-about data-about">
+        <span id="subtitle">What Does Data Detection & Response Do?</span>
+        <p id="description">The complexity of identifying and classifying all sensitive data accurately and setting up and configuring DLP solutions to work effectively within the existing environment can be overwhelming. Managing detection accuracy where DLP solutions can generate false positives, and false negatives can lead to unnecessary alerts and missed breaches. SCSDDR solution seeks to mitigate those challenges.</p>
+
+        <div class="about-card-container">
+            <div class="card" id="card1">
+                <i class="fa-solid fa-magnifying-glass"  id="icon-card"></i>    
+                <h3 class="card-title">Investigation</h3>
+                <p class="card-description">
+                    <ul><li><b>Quarantine File:</b> Isolates a suspicious file to prevent further access or spread.</li>
+                
+                <li><b>Block User: </b>Temporarily restrict a user’s access to prevent further malicious activity.</li>
+
+                <li><b>Reset Password:</b>
+                    Force a password change for a potentially compromised account.</li></ul>
+                </p>
+            </div>
+            <div class="card" id="card2">
+                <i class="fa-sharp fa-solid fa-universal-access" id="icon-card"></i>
+                <h3 class="card-title">Revoke Access</h3>
+                <p class="card-description"><ul>
+                    <li><b>Remove Document Sharing:</b> Revoke sharing permissions on sensitive documents.</li>
+                    <li><b>Apply Sensitivity Label:</b> Add a label to classify and protect sensitive data.</li>
+                    <li><b>Disable Account:</b> Deactivate a user account to stop ongoing malicious actions.</li>
+                    <li><b>Isolate Device:</b> Disconnect a device from the network to prevent further data.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="card" id="card3">
+                <i class="fa-solid fa-clock" id="icon-card"></i>
+                <h3 class="card-title">Triage in Seconds</h3>
+                <p class="card-description"><ul>
+                    <li>Activity Monitoring to continuously track data.</li>
+                    <li>Track access and movement.</li>
+                    <li>Track policy violation alerts.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="siem-about">
+        <span id="subtitle">Benefits of Data Detection & Response</span>
+        <p id="description">Assurance…delivering peace of mind together with reduced costs.</p>
+
+        <div class="about-card-container">
+            <div class="card" id="card1">
+   
+                <h3 class="card-title">Data Breach Reduction</h3>
+                <p class="card-description">Organizations with well-implemented Data Loss Prevention solutions report a significant reduction in breaches.</p>
+            </div>
+            <div class="card" id="card2">
+
+                <h3 class="card-title">Multi-Source Correlation
+                </h3>
+                <p class="card-description">The confidence and impact of DDR alerts are corroborated with multi-source correlation across endpoint, firewall, domain controller, and host logs. </p>
+            </div>
+            <div class="card" id="card3">
+               
+                <h3 class="card-title">Compliance Reporting</h3>
+                <p class="card-description">SCS supports compliance reporting against regulations and frameworks such as GDPR, HIPPA, and DORA.</p>
+            </div>
+            <div class="card" id="card4">
+
+                <h3 class="card-title">Detect Insider Threats</h3>
+                <p class="card-description">Insider threats are often the hardest to detect. Our data solutions help monitor user behavior and prevent malicious actions before they result in a significant data breach.</p>
+            </div>
+
+           
+
+           
+        </div>
+    </section>
+
+    <section class="solutions">
+        <span id="subtitle">Detection systems helped organizations save an average of  <span id="highlight">$2 million on the total cost of a data breach.</span>
+    </span>
+    </section>
+
+    <footer>
+        <div class="head-logo">SCS</div>
+        <div class="solution">
+        <ul class="footer-list">        <h5 class="footer-title">Solutions</h5>
+            <li><a href="SIEM.HTML">SIEM Detection & Response</a></li>
+            <li><a href="#">Endpoint Security</a></li>
+            <li><a href="#">Network Detection & Response</a></li>
+            <li><a href="#">Data Detection & Response</a></li>
+            <li><a href="#">Penetration Testing</a></li>
+        </div>
+
+        <div>
+            <h5 class="footer-title">  Platform          </h5>
+                <ul class="footer-list">
+                    <li><a href="#">Platform Overview</a></li>
+                    <li><a href="#">Incident Response</a></li>
+                    <li><a href="#">Risk Management</a></li>      
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="footer-title">Industries</h5>
+                <ul class="footer-list">
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Custruction</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Goverment</a></li>
+                    <li><a href="#">View More</a></li>
+                </div>
+
+                <div>
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Infographics</a></li>
+                        <li><a href="#">View More</a></li>
+                    </ul>
+
+                    </div>
+    </footer>
+
+</body>
+<script>
+    function goToHome() {
+    window.location.href = "../index.html"; // Redirects to homepage
+}
+    function toggleMenu() {
+        const nav = document.querySelector(".nav");
+        const menuToggle = document.querySelector(".menu-toggle");
+        nav.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    }  
+        
+        </script>
+    <script>
+            var containerElement = document.getElementById("dotlottie-canvas");
+        var animation = lottie.loadAnimation({
+            container: containerElement,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/assets/data.json"
+        });
+    </script>
+</html>

@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCS Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head-logo" onclick="goToHome()">SCS</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+          </div>
+        <ul class="nav">
+            <li class="dropdown">
+                <a href="solution.html">Solutions &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/solution/SIEM.HTML"> <i class="fa-solid fa-shield" id="icon-head"></i> SIEM Detection & Response</a></li>
+                    <li><a href="/solution/endpoint.html"> <i class="fa-brands fa-buffer" id="icon-head"></i> Endpoint Security</a></li>
+                    <li><a href="/solution/netwrok.html"><i class="fa-solid fa-server" id="icon-head"></i> Network Detection & Response</a></li>
+                    <li><a href="/solution/detection.html"><i class="fa-solid fa-database" id="icon-head"></i>Data Detection & Response</a></li>
+                    <li><a href="/solution/penetration.html"><i class="fa-solid fa-vial-virus" id="icon-head"></i>Intelligence Detection & Response</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Platform &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="platform.html"> <i class="fa-brands fa-webflow" id="icon-head"></i >Platform Overview</a></li>
+                    <li><a href="/platform/incident.html"><i class="fa-solid fa-cubes" id="icon-head"></i>Incident Response</a></li>
+                    <li><a href="/platform/risk.html"> <i class="fa-solid fa-check-to-slot" id="icon-head"></i>Risk Management</a></li>
+
+                </ul>
+            </li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="company.html">Company</a></li>
+        </ul>
+        <div class="login-signup">
+            <button class="login">Contact Us</button>
+            <button class="signup">Request a Demo</button>
+        </div>
+    </header>
+
+<section class="hero">
+    <div class="left">
+        <h1 class="company-name">Data Detection &    <span id="highlight">Response</span></h1>
+        <p class="hero-desc">Expert support and protection from risks related to your endpoints including 24/7/365 real-time monitoring, detection, and response.</p>
+
+        <div class="hero-buttons">
+            <button class="cta-primary">Get a Quote</button>
+        </div>
+    </div>
+    <div class="right" id="sol-r">            <div id="dotlottie-canvas" style="width: 600px; height: 400px;"></div></div>
+</section>
+
+<section class="about" id="siem-about">
+    <span id="subtitle">Key Benefits</span>
+    <p id="description"></p>
+
+    <div class="about-card-container">
+        <div class="card" id="card1">
+            <i class="fa-sharp fa-solid fa-key" ;" id="icon-card"></i>    
+            <h3 class="card-title">Reduced Noise</h3>
+            <p class="card-description">62% lower noise-to-signal ratio than other competitors.</p>
+        </div>
+        <div class="card" id="card2">
+            <i class="fa-solid fa-bug" id="icon-card"></i>
+            <h3 class="card-title">Risk Reduction</h3>
+            <p class="card-description">Reduce attack surface and maximize the ROI of your existing cyber security technologies.</p>
+        </div>
+        <div class="card" id="card3">
+            <i class="fa-regular fa-eye" id="icon-card"></i>
+            <h3 class="card-title">Complete Visibility</h3>
+            <p class="card-description">SCS Response Platform allows you to visualize, prioritize, escalate and respond to incidents.</p>
+        </div>
+        <div class="card" id="card4">
+            <i class="fa-solid fa-people-group" id="icon-card"></i>
+            <h3 class="card-title">Expert Team</h3>
+            <p class="card-description">450+ security experts, threat hunters, and SANS GIAC certified Incident handlers and forensic analysts.</p>
+        </div>
+       
+    </div>
+</section>
+
+<section class="about" id="siem-about">
+    <span id="subtitle">What Does Intelligence Detection & Response Do?</span>
+    <p id="description"></p>
+
+    <div class="about-card-container">
+        <div class="card" id="card1">
+
+            <h3 class="card-title">Operational</h3>
+            <p class="card-description"><ul>
+                <li>Attack Surface<br> <br>
+                    24/7 detection and response operational intelligence, monitoring for newly discovered assets, vulnerabilities, or unauthorized changes.  
+                </li><br>
+            
+                <li>Your Threat Landscape<br><br>  
+                    24/7 detection and response of active threats on dark web forums, telegram channels, and other underground sources to flag high-risk or targeted attacks.  
+                </li><br>
+            
+                <li>Digital Footprint<br><br>  
+                    24/7 identification and response to phishing campaigns, scams, domain impersonation, and brand infringements, helping to mitigate potential brand damage or customer impact.  
+                </li><br>
+            </ul>
+            </p>
+        </div>
+        <div class="card" id="card2">
+
+            <h3 class="card-title">Tactical
+            </h3>
+            <p class="card-description"><ul>
+                <li>Your Attack Surface<br><br>  
+                    Insights into adversary tactics exploiting vulnerabilities and initial access vectors, enabling strengthened defenses based on observed TTPs.  
+                </li><br>
+            
+                <li>Your Threat Landscape<br><br>  
+                    Continuous analysis of threat actor behaviors across dark web sources and social media, with a focus on monitoring evolving attack methods and tactics.  
+                </li><br>
+            
+                <li>Digital Footprint<br> <br> 
+                    Strategic visibility into broader trends in digital risk, including marketing regulatory shifts that influence brand protection, legal considerations, and potential reputational risks.  
+                </li><br>
+            </ul>
+             </p>
+        </div>
+        <div class="card" id="card3">
+           
+            <h3 class="card-title">Strategic</h3>
+            <p class="card-description"><ul>
+                <li>Your Attack Surface<br>  <br> 
+                    High-level insights into emerging risks affecting the overall attack surface, helping to inform long-term security planning and investment in protective controls.  
+                </li><br> 
+            
+                <li>Your Threat Landscape<br> <br>  
+                    Comprehensive analysis of geopolitical intelligence and emerging threats from various sources, to forecast adversary motivations involving risks.  
+                </li><br> 
+            
+                <li>Digital Risk Footprint<br>  <br> 
+                    Identification and triage investigation of phishing campaigns, scams, domain impersonations, brand infringements, and mitigate potential brand damage.  
+                </li><br> 
+            </ul>
+            </p>
+        </div>
+
+
+       
+    </div>
+</section>
+
+<section class="about" id="siem-about">
+    <span id="subtitle">Benefits of Securing Endpoints</span>
+    <p id="description"></p>
+
+    <div class="about-card-container">
+        <div class="card">
+            <h3 class="card-title">Threat Visibility</h3>
+            <p class="card-description">SCS provides visibility into advanced digital security threats. This has led to a better understanding and monitoring of relevant threats, more focus on specific threat vectors and other activities to identify gaps.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Risk Reduction</h3>
+            <p class="card-description">Reduced cyber risks and potential reputational damage. Understand the threat landscape, mitigate reputational risks, and prevent financial losses.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Actionable Intelligence</h3>
+            <p class="card-description">Actionable intelligence coupled with security automation enables rapid threat mitigation, allowing security teams to quickly block or respond to adversary intelligence and effectively mitigate threats.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Save Time</h3>
+            <p class="card-description">SCS saves time and reduces false positives by enabling customers to identify real threats, prioritize alerts using TTPs, and provide insights into external threats and MITRE ATT&CK indicators.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Agility and Awareness</h3>
+            <p class="card-description">Adversaries’ agility typically outperforms their victims. Be aware of sophisticated attacks and sources (e.g., terminals, websites, malware on user devices, etc.) that can make an organization’s security architecture highly vulnerable.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Decision Making</h3>
+            <p class="card-description">SCS accelerates cyber readiness by providing threat intelligence and better decision-making about the organization’s security posture.</p>
+        </div>
+    </div>
+</section>
+
+<section class="solutions">
+    <span id="subtitle">Companies using Intelligent Detection and Response solutions detected <span id="highlight"> 35% more threats than those relying on traditional methods.</span>
+</span>
+</section>
+<footer>
+    <div class="head-logo">SCS</div>
+    <div class="solution">
+    <ul class="footer-list">        <h5 class="footer-title">Solutions</h5>
+        <li><a href="SIEM.HTML">SIEM Detection & Response</a></li>
+        <li><a href="#">Endpoint Security</a></li>
+        <li><a href="#">Network Detection & Response</a></li>
+        <li><a href="#">Data Detection & Response</a></li>
+        <li><a href="#">Penetration Testing</a></li>
+    </div>
+
+    <div>
+        <h5 class="footer-title">  Platform          </h5>
+            <ul class="footer-list">
+                <li><a href="#">Platform Overview</a></li>
+                <li><a href="#">Incident Response</a></li>
+                <li><a href="#">Risk Management</a></li>      
+            </ul>
+        </div>
+
+        <div>
+            <h5 class="footer-title">Industries</h5>
+            <ul class="footer-list">
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Energy</a></li>
+                <li><a href="#">Custruction</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Goverment</a></li>
+                <li><a href="#">View More</a></li>
+            </div>
+
+            <div>
+                <h5 class="footer-title">Resources</h5>
+                <ul class="footer-list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Infographics</a></li>
+                    <li><a href="#">View More</a></li>
+                </ul>
+
+                </div>
+</footer>
+</body>
+<script>
+    function goToHome() {
+    window.location.href = "../index.html"; // Redirects to homepage
+}
+    function toggleMenu() {
+        const nav = document.querySelector(".nav");
+        const menuToggle = document.querySelector(".menu-toggle");
+        nav.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    }  
+        
+        </script>
+    <script>
+            var containerElement = document.getElementById("dotlottie-canvas");
+        var animation = lottie.loadAnimation({
+            container: containerElement,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/assets/intelligent.json"
+        });
+    </script>
+</html>
