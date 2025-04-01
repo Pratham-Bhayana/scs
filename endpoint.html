@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCS Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head-logo">SCS</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+          </div>
+        <ul class="nav">
+            <li class="dropdown">
+                <a href="solution.html">Solutions &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="SIEM.HTML"> <i class="fa-solid fa-shield" id="icon-head"></i> SIEM Detection & Response</a></li>
+                    <li><a href="endpoint.html"> <i class="fa-brands fa-buffer" id="icon-head"></i> Endpoint Security</a></li>
+                    <li><a href="netwrok.html"><i class="fa-solid fa-server" id="icon-head"></i> Network Detection & Response</a></li>
+                    <li><a href="detection.html"><i class="fa-solid fa-database" id="icon-head"></i>Data Detection & Response</a></li>
+                    <li><a href="penetration.html"><i class="fa-solid fa-vial-virus" id="icon-head"></i>Penetration Testing</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Platform &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"> <i class="fa-brands fa-webflow" id="icon-head"></i >Platform Overview</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cubes" id="icon-head"></i>Incident Response</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-check-to-slot" id="icon-head"></i>Risk Management</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Industries</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Company</a></li>
+        </ul>
+        <div class="login-signup">
+            <button class="login">Contact Us</button>
+            <button class="signup">Request a Demo</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="left">
+            <h1 class="company-name">Endpoint Detection &    <span id="highlight">Response</span></h1>
+            <p class="hero-desc">Expert support and protection from risks related to your endpoints including 24/7/365 real-time monitoring, detection, and response.</p>
+
+            <div class="hero-buttons">
+                <button class="cta-primary">Get a Quote</button>
+            </div>
+        </div>
+        <div class="right" id="sol-r">            <div id="dotlottie-canvas" style="width: 600px; height: 400px;"></div></div>
+    </section>
+
+    <section class="about" id="siem-about">
+        <span id="subtitle">Key Benefits</span>
+        <p id="description"></p>
+
+        <div class="about-card-container">
+            <div class="card" id="card1">
+                <i class="fa-sharp fa-solid fa-key" ;" id="icon-card"></i>    
+                <h3 class="card-title">Reduced Noise</h3>
+                <p class="card-description">62% lower noise-to-signal ratio than other competitors.</p>
+            </div>
+            <div class="card" id="card2">
+                <i class="fa-solid fa-bug" id="icon-card"></i>
+                <h3 class="card-title">Risk Reduction</h3>
+                <p class="card-description">Reduce attack surface and maximize the ROI of your existing cyber security technologies.</p>
+            </div>
+            <div class="card" id="card3">
+                <i class="fa-regular fa-eye" id="icon-card"></i>
+                <h3 class="card-title">Complete Visibility</h3>
+                <p class="card-description">SCS Response Platform allows you to visualize, prioritize, escalate and respond to incidents.</p>
+            </div>
+            <div class="card" id="card4">
+                <i class="fa-solid fa-people-group" id="icon-card"></i>
+                <h3 class="card-title">Expert Team</h3>
+                <p class="card-description">450+ security experts, threat hunters, and SANS GIAC certified Incident handlers and forensic analysts.</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="solutions">
+        <span id="subtitle">What Does Endpoint Detection & Response Do?</span>
+        <p id="description">Managed Extended Detection & Response for Endpoints involves the continuous monitoring and analysis of your endpoint devices to detect and respond to threats. We help organizations quickly identify security incidents, mitigate risks, and improve their overall endpoint security posture. By partnering with SecurityHQ, we leverage your technologies to ensure a secure environment for your events, protecting participants and sensitive information.</p>
+
+        <div class="about-card-container">
+
+            <div class="card" id="sol1">
+                <img class="card-img" src="/assets/tech.jpeg" alt="TECH Agnostic">
+                <h3 class="card-title">Tech Agnostic SIEM Analytics</h3>
+                <p class="card-description">Ingestion and orchestration of data from a wide-range of sources including logs, events, and alerts using all major SIEM vendors. Use Our SIEM or Bring Your Own SIEM for us to manage.</p>
+            </div>
+            <div class="card" id="sol2">
+                <img class="card-img" src="/assets/247.jpg" alt="24/7 detect">
+                <h3 class="card-title">24/7 Detection</h3>
+                <p class="card-description">SCS Cyber Defense Team triage and investigates threats from correlated alerts, 24/7. Threat detection rules are synchronized to SIEM platforms and events are triaged in seconds.</p>
+            </div>
+            <div class="card" id="sol3">
+                <img class="card-img" src="/assets/response.jpeg" alt="247 response">
+                <h3 class="card-title">24/7 Containment</h3>
+                <p class="card-description">Mitigate the impact of qualified threat events by isolating compromised hosts using preauthorised playbooks.</p>
+            </div>
+
+            <div class="card" id="sol3">
+                <img class="card-img" src="/assets/Eradication.jpg" alt="247 response">
+                <h3 class="card-title">24/7 Eradication</h3>
+                <p class="card-description">Malicious payloads and artifacts are cleaned and eradicated.</p>
+            </div>
+
+            <div class="card" id="sol3">
+                <img class="card-img" src="/assets/control.jpg" alt="247 response">
+                <h3 class="card-title">Control</h3>
+                <p class="card-description">ML profiling is used to deploy Adversary Exposure Mitigation to enforce the least privilege and harden the endpoint against attack.</p>
+            </div>
+
+    </section>
+
+    <section class="about" id="siem-about">
+        <span id="subtitle">Benefits of Securing Endpoints</span>
+        <p id="description"></p>
+
+        <div class="about-card-container">
+            <div class="card" id="card1">
+   
+                <h3 class="card-title">Cyber Forensics</h3>
+                <p class="card-description">The average response time for cyber insurers is between 24 to 48 hours. SecurityHQ provides breach response forensics within 1 hour.</p>
+            </div>
+            <div class="card" id="card2">
+
+                <h3 class="card-title">Evasion Mitigation
+                </h3>
+                <p class="card-description">Adversaries are skilled in evading Endpoint solutions. SCS monitoring techniques are used to reduce this likelihood with continual analysis of evasion techniques. </p>
+            </div>
+            <div class="card" id="card3">
+               
+                <h3 class="card-title">Immediate Response</h3>
+                <p class="card-description">We respond to threat detection events in seconds and automate response immediately and continuously 24/7. A swift response is imperative.</p>
+            </div>
+            <div class="card" id="card4">
+
+                <h3 class="card-title">Leverage Investments</h3>
+                <p class="card-description">Organizations typically utilize only 30% of the features and capabilities of their costly endpoint solutions. SecurityHQ sweats those assets to improve ROI.</p>
+            </div>
+
+            <div class="card" id="card4">
+
+                <h3 class="card-title">Cost Efficiencies</h3>
+                <p class="card-description">Cyber never sleeps. SCS reduces the customer dependence on hiring, training, and retaining talent that would otherwise attend to endpoint security.</p>
+            </div>
+
+            <div class="card" id="card4">
+
+                <h3 class="card-title">Fast Track</h3>
+                <p class="card-description">Prioritise threats, formulate action plans, and speed up response time.</p>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <section class="solutions">
+        <span id="subtitle">60% of breaches involve <span id="highlight">endpoints being compromised.</span>
+    </span>
+    </section>
+
+    <footer>
+        <div class="head-logo">SCS</div>
+        <div class="solution">
+        <ul class="footer-list">        <h5 class="footer-title">Solutions</h5>
+            <li><a href="SIEM.HTML">SIEM Detection & Response</a></li>
+            <li><a href="#">Endpoint Security</a></li>
+            <li><a href="#">Network Detection & Response</a></li>
+            <li><a href="#">Data Detection & Response</a></li>
+            <li><a href="#">Penetration Testing</a></li>
+        </div>
+
+        <div>
+            <h5 class="footer-title">  Platform          </h5>
+                <ul class="footer-list">
+                    <li><a href="#">Platform Overview</a></li>
+                    <li><a href="#">Incident Response</a></li>
+                    <li><a href="#">Risk Management</a></li>      
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="footer-title">Industries</h5>
+                <ul class="footer-list">
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Energy</a></li>
+                    <li><a href="#">Custruction</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Goverment</a></li>
+                    <li><a href="#">View More</a></li>
+                </div>
+
+                <div>
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Infographics</a></li>
+                        <li><a href="#">View More</a></li>
+                    </ul>
+
+                    </div>
+    </footer>
+    </body>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector(".nav");
+            const menuToggle = document.querySelector(".menu-toggle");
+            nav.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+        }  
+            
+            </script>
+        <script>
+                var containerElement = document.getElementById("dotlottie-canvas");
+            var animation = lottie.loadAnimation({
+                container: containerElement,
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path: "/assets/endpoint.json"
+            });
+        </script>
+</html>

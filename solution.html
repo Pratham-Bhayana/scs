@@ -19,8 +19,14 @@
           </div>
         <ul class="nav">
             <li class="dropdown">
-                <a href="index.html">Home </a>
-                
+                <a href="solution.html">Solutions &#9662</a>
+                <ul class="dropdown-menu">
+                    <li><a href="SIEM.HTML"> <i class="fa-solid fa-shield" id="icon-head"></i> SIEM Detection & Response</a></li>
+                    <li><a href="endpoint.html"> <i class="fa-brands fa-buffer" id="icon-head"></i> Endpoint Security</a></li>
+                    <li><a href="netwrok.html"><i class="fa-solid fa-server" id="icon-head"></i> Network Detection & Response</a></li>
+                    <li><a href="detection.html"><i class="fa-solid fa-database" id="icon-head"></i>Data Detection & Response</a></li>
+                    <li><a href="penetration.html"><i class="fa-solid fa-vial-virus" id="icon-head"></i>Penetration Testing</a></li>
+                </ul>
             </li>
             <li class="dropdown">
                 <a href="#">Platform &#9662</a>
@@ -75,43 +81,6 @@
         <img src="/assets/protection.png" alt="defense" id="solution-img">
     </div>
 
-
-
-</body>
-<script>
-    function toggleMenu() {
-        const nav = document.querySelector(".nav");
-        nav.classList.toggle("active");
-    }
-    
-    function toggleMenu() {
-        const nav = document.querySelector(".nav");
-        nav.classList.toggle("active");
-    }
-    
-    // Ensure dropdowns work properly on mobile
-    document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
-        dropdown.addEventListener("click", function (e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault(); 
-                let dropdownMenu = this.nextElementSibling;
-                dropdownMenu.classList.toggle("show");
-            }
-        });
-    });
-    
-    
-    </script>
-<script>
-        var containerElement = document.getElementById("dotlottie-canvas");
-    var animation = lottie.loadAnimation({
-        container: containerElement,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "/assets/solution.json"
-    });
-</script>
     <footer>
         <div class="head-logo">SCS</div>
         <div class="solution">
@@ -154,4 +123,28 @@
                     </ul>
 
                     </div>
-    </footer></html>
+    </footer>
+
+
+
+</body>
+<script>
+function toggleMenu() {
+    const nav = document.querySelector(".nav");
+    const menuToggle = document.querySelector(".menu-toggle");
+    nav.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+}  
+    
+    </script>
+<script>
+        var containerElement = document.getElementById("dotlottie-canvas");
+    var animation = lottie.loadAnimation({
+        container: containerElement,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "/assets/solution.json"
+    });
+</script>
+</html>

@@ -376,6 +376,28 @@ header {
     font-weight: 400;
 }
 
+/*SIEM.HTMl starts here */
+
+
+#siem-about{
+    min-width: 100%;
+    background-color: hsla(0, 0%, 85%, 0.945);
+}
+#icon-card{
+    color: white;
+    background-color: orange;
+    padding: 20px 10%;
+    border-radius: 15px;
+    font-size: 35px;
+ 
+}
+
+.card-img{
+    min-width: 220px;
+    max-height: 200px;
+    border-radius: 12px;
+}
+
 /* Industries Section */
 .industry-list {
     display: flex;
@@ -659,6 +681,10 @@ footer a {
 
     .about, .solutions, .industries , #solution-about {
         padding: 60px 5%;
+    }
+
+    .card-img{
+        max-width: 100%;
     }
 }
 
