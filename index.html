@@ -92,7 +92,7 @@
 
     <section class="solutions">
         <span id="subtitle">Solutions</span>
-        <p id="description">SecurityHQ enhances traditional security measures by integrating and correlating data across multiple security domains, all mapped to leading frameworks, including NIST CSF 2.0, MITRE, and NCSC.</p>
+        <p id="description">SCS enhances traditional security measures by integrating and correlating data across multiple security domains, all mapped to leading frameworks, including NIST CSF 2.0, MITRE, and NCSC.</p>
 
         <div class="about-card-container">
             <div class="card" id="sol1">
@@ -191,14 +191,13 @@
                     </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 <script>
 
 function goToHome() {
-        window.location.href = "index.html"; // Redirects to homepage
-    }
-function toggleMenu() {
-    const nav = document.querySelector(".nav");
-    nav.classList.toggle("active");
+    window.location.href = "index.html"; // Redirects to homepage
 }
 
 function toggleMenu() {
@@ -212,10 +211,39 @@ document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
         if (window.innerWidth <= 768) {
             e.preventDefault(); 
             let dropdownMenu = this.nextElementSibling;
-            dropdownMenu.classList.toggle("show");
+
+            // Check if it's already open
+            let isOpen = dropdownMenu.classList.contains("show");
+
+            // Close all other dropdowns
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                menu.classList.remove("show");
+            });
+
+            // Toggle current dropdown based on its previous state
+            if (!isOpen) {
+                dropdownMenu.classList.add("show");
+            }
         }
     });
 });
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function (e) {
+    if (!e.target.closest(".dropdown")) {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            menu.classList.remove("show");
+        });
+    }
+});
+
+// Prevent event bubbling inside the dropdown
+document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+    menu.addEventListener("click", function (e) {
+        e.stopPropagation();
+    });
+});
+
 
 
 </script>
