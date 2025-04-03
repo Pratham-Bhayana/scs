@@ -354,6 +354,149 @@ max-height: 350px;
     width: 50%;
 }
 
+/* ends here */
+
+/* indistries starts here */
+
+.card-preview{
+    background-color: #fff;
+    padding: 80px 5%;
+    min-width: 1200px;
+}
+
+.card-container{
+    flex-wrap: wrap;
+    gap: 55px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.card-container i{
+    color: rgb(0, 255, 0);
+}
+
+.card{
+    min-width: 300px;
+    border-radius: 15px;
+    background-color: #111536;
+    color: rgb(0, 255, 0);
+    padding: 5px 2.5%;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
+    box-shadow: 8px -3px 17px 2px rgba(0, 0, 0, 0.432);
+}
+
+.card:hover{
+background-color: #ffffff;
+}
+
+.card:hover .icon-container i {
+    color: orange; /* Change this to match your theme */
+}
+
+/* Change card title color on hover */
+.card:hover .card-tittle {
+    color: orange; /* Same as icons */
+}
+
+.card:hover #card-icon{
+    color: orange;
+    background-color: #1d2142;
+}
+
+
+
+.icon-container{
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#card-icon{
+    padding: 10px;
+
+    border-radius: 12px;
+    background-color: #5e6392ab;
+    font-size: 25px;
+}
+
+#icon-arrow{
+
+    cursor: pointer;
+    padding: 10px;
+    border: 0.5px solid #5e6392ab;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#icon-arrow:hover{
+    background-color: #1d2142;
+    color: white;
+}
+
+
+.img-container{
+    margin-top: 5%;
+}
+.img-card{
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 200px;
+    border-radius: 15px;
+}
+
+.card-tittle{
+    text-transform: uppercase;
+    margin-top: 5%  ;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#card-2{
+    background-color: #111536;
+}
+
+.card-two{
+    background-color: white;
+}
+
+.card-two i{
+    color: orange;
+}
+
+.card-two #card-icon{
+    background-color: #111536;
+
+}
+
+.card-two .card-tittle{
+color: orange;
+}
+
+.card-two:hover .icon-container i {
+    color: rgb(0, 255, 0);/* Change this to match your theme */
+}
+
+/* Change card title color on hover */
+.card-two:hover .card-tittle {
+    color: rgb(0, 255, 0);
+}
+
+.card-two:hover #card-icon{
+    color: rgb(0, 255, 0);
+    background-color: #1d2142;
+}
+
+.card-two:hover{
+    background-color: #111536;
+    box-shadow: 8px -3px 17px 2px rgba(228, 228, 228, 0.432);
+
+}
+
 footer {
     background-color: #1d2142;
     padding: 40px 5%;
