@@ -64,7 +64,7 @@
         <div class="card-container">
             <div class="card" id="card1">
                 <div class="icon-container"><i class="fa-sharp fa-solid fa-school" id="card-icon"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow"></i> 
+                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow" onclick="goToEducation()"></i> 
                 </div>
 
                 <div class="img-container"><img src="/assets/education.jpeg" class="img-card" alt="education"></div>
@@ -282,6 +282,10 @@
     function goToHome() {
         window.location.href = "../index.html"; // Redirects to homepage
     }
+
+    function goToEducation() {
+            window.location.href = "/industries/education.html";
+        }
     
     function toggleMenu() {
         const nav = document.querySelector(".nav");
