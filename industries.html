@@ -38,7 +38,6 @@
                 </ul>
             </li>
             <li><a href="industries.html">Industries</a></li>
-            <li><a href="resources.html">Resources</a></li>
             <li><a href="company.html">Company</a></li>
         </ul>
         <div class="login-signup">
@@ -74,7 +73,7 @@
 
             <div class="card" id="card2">
                 <div class="icon-container"><i class="fa-solid fa-solar-panel" id="card-icon"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow"></i> 
+                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow" onclick="goToEnergy()"></i> 
                 </div>
 
                 <div class="img-container"><img src="/assets/energy.jpeg" class="img-card" alt="education"></div>
@@ -84,7 +83,7 @@
 
             <div class="card" id="card3">
                 <div class="icon-container"><i class="fa-solid fa-trowel-bricks" id="card-icon"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow"></i> 
+                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow" onclick="goToConstruction()"></i> 
                 </div>
 
                 <div class="img-container"><img src="/assets/construction.jpg" class="img-card" alt="education"></div>
@@ -94,7 +93,7 @@
 
             <div class="card" id="card4">
                 <div class="icon-container"><i class="fa-solid fa-coins" id="card-icon"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow"></i> 
+                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow"onclick="goToFinance()"></i> 
                 </div>
 
                 <div class="img-container"><img src="/assets/finance.jpg" class="img-card" alt="education"></div>
@@ -130,7 +129,7 @@
         <div class="card-container">
             <div class="card card-two" id="card7">
                 <div class="icon-container"><i class="fa-sharp fa-solid fa-house-crack" id="card-icon"></i>
-                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow"></i> 
+                    <i class="fa-sharp fa-solid fa-arrow-right" id="icon-arrow" ></i> 
                 </div>
 
                 <div class="img-container"><img src="/assets/insurance.jpeg" class="img-card" alt="education"></div>
@@ -277,6 +276,7 @@
 
 
 </body>
+<script src="script.js"></script>
 <script>
 
     function goToHome() {
@@ -285,6 +285,18 @@
 
     function goToEducation() {
             window.location.href = "/industries/education.html";
+        }
+
+        function goToEnergy() {
+            window.location.href = "/industries/energy.html";
+        }
+
+        function goToConstruction() {
+            window.location.href = "/industries/construction.html";
+        }
+
+        function goToFinance() {
+            window.location.href = "/industries/finance.html";
         }
     
     function toggleMenu() {

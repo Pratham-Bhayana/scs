@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   animateIfExists(".company-name", {
-    y: 20,
+    y: 100,
+    x:0,
     opacity: 0,
     duration: 1.4,
     ease: "power4.inOut",
@@ -88,13 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: ".about",
       start: "top 85%", // Trigger when section is 85% from top
       end: "top 15%",   // End when top is 15% from viewport top
-      toggleActions: "play none none reverse",
+      // toggleActions: "play none none reverse",
       markers: false,   // Set to false after testing
     },
-    y: 20,
+    y: -250,
     opacity: 0,
-    duration: 1,
-    ease: "expo.inOut",
+    duration: 1.5,
+    ease: "power4.inOut",
+
   });
 
   animateIfExists(".about #description", {
@@ -235,8 +237,8 @@ document.addEventListener("DOMContentLoaded", () => {
   animateIfExists("footer .head-logo", {
     scrollTrigger: {
       trigger: "footer",
-      start: "top 85%",
-      end: "top 15%",
+      start: "top 25%",
+      end: "bottom 75%",
       toggleActions: "play none none reverse",
       markers: false,
     },
@@ -246,11 +248,11 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "expo.inOut",
   });
 
-  animateIfExists(".footer-list a", {
+  animateIfExists(".footer-list ", {
     scrollTrigger: {
       trigger: "footer",
-      start: "top 85%",
-      end: "top 15%",
+      start: "top 55%",
+      end: "bottom 100%",
       toggleActions: "play none none reverse",
       markers: false,
     },

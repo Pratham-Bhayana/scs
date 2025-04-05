@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="platform.css">
+    <link rel="stylesheet" href="../platform.css">
+    <link rel="stylesheet" href="industries.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -31,13 +32,14 @@
             <li class="dropdown">
                 <a href="#">Platform &#9662</a>
                 <ul class="dropdown-menu">
-                    <li><a href="platform.html"> <i class="fa-brands fa-webflow" id="icon-head"></i >Platform Overview</a></li>
+                    <li><a href="/platform.html"> <i class="fa-brands fa-webflow" id="icon-head"></i >Platform Overview</a></li>
                     <li><a href="/platform/incident.html"><i class="fa-solid fa-cubes" id="icon-head"></i>Incident Response</a></li>
                     <li><a href="/platform/risk.html"> <i class="fa-solid fa-check-to-slot" id="icon-head"></i>Risk Management</a></li>
 
                 </ul>
             </li>
-            <li><a href="industries.html">Industries</a></li>
+            <li><a href="../industries.html">Industries</a></li>
+            <li><a href="resources.html">Resources</a></li>
             <li><a href="company.html">Company</a></li>
         </ul>
         <div class="login-signup">
@@ -48,11 +50,10 @@
 
     <section class="hero">
         <div class="left">
-            <h1 class="company-name">Risk & Incident Management<span id="highlight-hero"> Capabilities</span></h1>
+            <h1 class="company-name">Supporting the construction 
+                 <span id="highlight-hero">Industry </span></h1>
             <p class="hero-desc">
-                SCS Response Platform Rewrites the Rule Book with Risk & Incident Management Capabilities
-                The SHQ Response Platform empowers organizations to proactively tackle security challenges. Enhance your collaboration and streamline your risk mitigation processes today.</p>
-
+                The construction sector is a particularly appealing target to malicious actors. This is due to the myriad of third-party suppliers used, horde of personal data being collected, and the large sums of money involved in construction projects.
             <div class="hero-buttons">
                 <button class="cta-primary">Get a Quote</button>
             </div>
@@ -60,55 +61,43 @@
         <div class="right" id="sol-r">            <div id="dotlottie-canvas" style="width: 600px; height: 400px;"></div></div>
     </section>
 
+<div class="about">
+    <h3 id="description">
+        A large proportion of economic growth comes down to property and construction. What motivates an attack in this industry is often financial gain, carried out by organized crime groups that are opportunistic in nature.
 
 
-    <section class="risk">
-        <div class="risk-card-container">
-            <div class="risk-card" id="card-title">Map Threats, Assets & Vulnerabilities to Derive Risks</div>
-            <div class="risk-card" id="card1">Be it 1 or 1000, map all cyber risks targeting your business.</div>
-            <div class="risk-card" id="card2">Map metrics & measurements within cyber security to a custom persona.</div>
-            <div class="risk-card" id="card3">Map and group bad actors, and threat events together.</div>
-            <div class="risk-card" id="card4">Map the total amount of risks to business, in a risk count manner.</div>
-        </div>
-        <div class="img-container">
-            <div id="subtitle"> <span id="highlight"> Less Panic.</span> More Risk Management</div>
-            <img src="/assets/risk-img-1.png" alt="" class="img">
-        </div>
+
+          </h3>
+</div>
+
+<section class="card-preview">
+    <div class="card-container">
+        <div class="card edu" id="card1">
+            <div class="icon-container "><i class="fa-sharp fa-solid fa-link" id="card-icon"></i></div>
+            <div class="card-tittle">Supply Chain Attack</div>
+                
+            <div class="card-des">
+                <p>Cyber-attacks on suppliers can be just as damaging as attacks on your own business. Along with physical delivery of materials, machinery, and labour, there is also the exchange of digital information, like email providers and accounting software companies. Know who your suppliers are, and how they operate. </p></div>
+            </div>
+
+            <div class="card edu" id="card2">
+                <div class="icon-container "><i class="fa-sharp fa-solid fa-key" id="card-icon"></i></div>
+                <div class="card-tittle">Credential Theft</div>
+                    
+                <div class="card-des">
+                    <p>Employees reuse credential details, such as passwords, for multiple accounts. When a breach is made, this makes it relatively easy for an attack to access multiple accounts/networks at a time. Multifactor authentication methods are vital, to reduce the chance of data breaches.</p></div>
+                </div>
+
+                <div class="card edu" id="card3">
+                    <div class="icon-container "><i class="fa-sharp fa-solid fa-handshake-simple" id="card-icon"></i></div>
+                    <div class="card-tittle">Social Engineering</div>
+                        
+                    <div class="card-des">
+                        <p>Social engineering methods are used to con people into providing information. This is done by taking advantage of a person’s emotional responses. Many employees are not trained to look for such attacks, and are often unaware of their part in an attack. </p></div>
+                    </div>
+
+
     </section>
-
-    <section class="risk" id="risk-2">
-        <div class="risk-card-container">
-            <div class="risk-card" id="card-title">Collaborative approach with your SOC Team.</div>
-            <div class="risk-card" id="card1">View all mitigations related to a risk, with the Mitigations tab.</div>
-            <div class="risk-card" id="card2">Receive and assign tasks and mitigations to individuals.</div>
-            <div class="risk-card" id="card3">Select a new progress or status, from anywhere, anytime.</div>
-            <div class="risk-card" id="card-title">Incident Management
-                & Response Platform</div>
-        </div>
-        <div class="img-container">
-            <div id="subtitle"> 
-                Track Mitigations, <span id="highlight">Task Assignments, and Progress</span>
-            <img src="/assets/risk-2.png" alt="" class="img">
-        </div>
-    </section>
-
-    <section class="risk">
-        <div class="risk-card-container">
-            <div class="risk-card" id="card-title">Reduce issues with compliance & uphold the right security policies.</div>
-            <div class="risk-card" id="card1">Enriched & mature compliance processes.</div>
-            <div class="risk-card" id="card2">Ensure currency of knowledge in a changing technical environment.</div>
-            <div class="risk-card" id="card3">Safeguard against hefty fines and maintain brand value.</div>
-           
-        </div>
-        <div class="img-container">
-            <div id="subtitle"> Link Compliance <span id="highlight"> Incidents to Risk</div>
-            <img src="/assets/risk-3.png" alt="" class="img">
-        </div>
-    </section>
-
-    <div class="message">
-        <h3 id="">Monitor, Respond and Recover 24x7</h3>
-    </div>
 
 
     <footer>
@@ -161,8 +150,10 @@
 <script>
 
     function goToHome() {
-        window.location.href = "index.html"; // Redirects to homepage
+        window.location.href = "../index.html"; // Redirects to homepage
     }
+
+
     
     function toggleMenu() {
         const nav = document.querySelector(".nav");
@@ -227,7 +218,7 @@
         renderer: "svg",
         loop: true,
         autoplay: true,
-        path: "/assets/risk.json"
+        path: "/assets/construction.json"
     });
 </script>
 
