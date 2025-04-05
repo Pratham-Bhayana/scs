@@ -24,10 +24,40 @@ header {
 }
 
 .menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1001;
   }
+  
+  .menu-toggle span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+  }
+  
+  /* X Animation Effect */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .menu-toggle.active span {
+    background-color: orange;
+}
+  
 
 .head-logo {
     cursor: pointer;
@@ -605,7 +635,7 @@ footer a {
     .menu-toggle {
         font-size: 30px;
         cursor: pointer;
-        display: block;
+        display: flex;
         z-index: 1000;
     }
 
@@ -617,8 +647,8 @@ footer a {
         top: 0px;
         right: 0px;
         height: 100vh;
-        background: #222;
-        width: 250px;
+        background: #ffffff;
+        width: 300px;
         border-radius: 5px;
         padding: 10px;
 
@@ -655,14 +685,15 @@ footer a {
 
     .nav li {
         /* margin: 10px 15px; */
-        width: 100px;
+        width: 100%;
+        margin-bottom: 10%;
         
         list-style: none;
     }
 
     .nav a {
    
-        color: white;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         display: flex;
         width: 100%;
@@ -672,13 +703,13 @@ footer a {
     /* Mobile dropdown menus */
     .dropdown-menu {
 
-
+        box-shadow: none;
         display: none; /* Always show dropdown on mobile */
         flex-direction: column; /* Stack items vertically */
-        width: auto%; /* Full width */
+        width: 250px; /* Full width */
         height: auto;
         text-align: left; /* Align text to the left */
-        background: #333; /* Background color for mobile */
+        background: #d6d6d6; /* Background color for mobile */
         padding: 5px; 
     }
 

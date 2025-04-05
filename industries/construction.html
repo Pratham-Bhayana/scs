@@ -15,13 +15,17 @@
 <body>
     <header>
         <div class="head-logo" onclick="goToHome()">SCS</div>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            ☰
+        <div class="menu-toggle" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         <ul class="nav">
             <li class="dropdown">
-                <a href="solution.html">Solutions &#9662</a>
+                <a href="#">Solutions &#9662</a>
                 <ul class="dropdown-menu">
+                    <li><a href="/solution.HTML"> <i class="fa-sharp fa-solid fa-people-arrows" id="icon-head"></i> Solutions</a></li>
+
                     <li><a href="/solution/SIEM.HTML"> <i class="fa-solid fa-shield" id="icon-head"></i> SIEM Detection & Response</a></li>
                     <li><a href="/solution/endpoint.html"> <i class="fa-brands fa-buffer" id="icon-head"></i> Endpoint Security</a></li>
                     <li><a href="/solution/netwrok.html"><i class="fa-solid fa-server" id="icon-head"></i> Network Detection & Response</a></li>
@@ -104,44 +108,34 @@
         <div class="head-logo">SCS</div>
         <div class="solution">
         <ul class="footer-list">        <h5 class="footer-title">Solutions</h5>
-            <li><a href="SIEM.HTML">SIEM Detection & Response</a></li>
-            <li><a href="#">Endpoint Security</a></li>
-            <li><a href="#">Network Detection & Response</a></li>
-            <li><a href="#">Data Detection & Response</a></li>
-            <li><a href="#">Penetration Testing</a></li>
+            <li><a href="/solution/SIEM.HTML">SIEM Detection & Response</a></li>
+            <li><a href="/solution/endpoint.html">Endpoint Security</a></li>
+            <li><a href="/solution/netwrok.html">Network Detection & Response</a></li>
+            <li><a href="/solution/detection.html">Data Detection & Response</a></li>
+            <li><a href="/solution/penetration.html">Penetration Testing</a></li>
         </div>
 
         <div>
             <h5 class="footer-title">  Platform          </h5>
                 <ul class="footer-list">
-                    <li><a href="#">Platform Overview</a></li>
-                    <li><a href="#">Incident Response</a></li>
-                    <li><a href="#">Risk Management</a></li>      
+                    <li><a href="/platform.html">Platform Overview</a></li>
+                    <li><a href="/platform/incident.html">Incident Response</a></li>
+                    <li><a href="platform/risk.html">Risk Management</a></li>      
                 </ul>
             </div>
 
             <div>
                 <h5 class="footer-title">Industries</h5>
                 <ul class="footer-list">
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Energy</a></li>
-                    <li><a href="#">Custruction</a></li>
-                    <li><a href="#">Finance</a></li>
-                    <li><a href="#">Goverment</a></li>
-                    <li><a href="#">View More</a></li>
+                    <li><a href="/industries/education.html">Education</a></li>
+                    <li><a href="/industries/energy.html">Energy</a></li>
+                    <li><a href="/industries/construction.html">Custruction</a></li>
+                    <li><a href="/industries/finance.html">Finance</a></li>
+                    <li><a href="/industries/goverment.html">Goverment</a></li>
+                    <li><a href="industries.html">View More</a></li>
                 </div>
 
-                <div>
-                    <h5 class="footer-title">Resources</h5>
-                    <ul class="footer-list">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Infographics</a></li>
-                        <li><a href="#">View More</a></li>
-                    </ul>
-
-                    </div>
+                
     </footer>
 
 
@@ -155,10 +149,15 @@
 
 
     
-    function toggleMenu() {
-        const nav = document.querySelector(".nav");
-        nav.classList.toggle("active");
+    function toggleMenu(menuToggleElement) {
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("active");
+
+    // Toggle active class on the hamburger icon
+    if (menuToggleElement) {
+        menuToggleElement.classList.toggle("active");
     }
+}
     
     // Ensure dropdowns work properly on mobile
     document.querySelectorAll(".dropdown > a").forEach((dropdown) => {

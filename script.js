@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Ensure DOM is fully loaded
+
 document.addEventListener("DOMContentLoaded", () => {
   // Utility function for randomizing values
   const random = (min, max) => Math.random() * (max - min) + min;

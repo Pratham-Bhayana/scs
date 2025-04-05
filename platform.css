@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
+
     font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
@@ -24,10 +26,39 @@ header {
 }
 
 .menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1001;
   }
+  
+  .menu-toggle span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+  }
+  
+  /* X Animation Effect */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .menu-toggle.active span {
+    background-color: orange;
+}
 
 .head-logo {
     cursor: pointer;
@@ -266,8 +297,9 @@ header {
 
 
 .risk{
-    position: sticky;
+
     display: flex;
+
     gap: 50px;
     padding: 80px 5%;
     text-align: left;
@@ -361,7 +393,7 @@ max-height: 350px;
 .card-preview{
     background-color: #fff;
     padding: 80px 5%;
-    min-width: 1200px;
+    width: 100%;
 }
 
 .card-container{
@@ -601,7 +633,7 @@ footer a {
     .menu-toggle {
         font-size: 30px;
         cursor: pointer;
-        display: block;
+        display: flex;
         z-index: 1000;
     }
 
@@ -613,8 +645,8 @@ footer a {
         top: 0px;
         right: 0px;
         height: 100vh;
-        background: #222;
-        width: 250px;
+        background: #ffffff;
+        width: 300px;
         border-radius: 5px;
         padding: 10px;
 
@@ -626,14 +658,15 @@ footer a {
 
     .nav li {
         /* margin: 10px 15px; */
-        width: 100px;
+        width: 100%;
+        margin-bottom: 10%;
         
         list-style: none;
     }
 
     .nav a {
    
-        color: white;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         display: flex;
         width: 100%;
@@ -643,13 +676,13 @@ footer a {
     /* Mobile dropdown menus */
     .dropdown-menu {
 
-
+        box-shadow: none;
         display: none; /* Always show dropdown on mobile */
         flex-direction: column; /* Stack items vertically */
-        width: auto; /* Full width */
+        width: 250px; /* Full width */
         height: auto;
         text-align: left; /* Align text to the left */
-        background: #333; /* Background color for mobile */
+        background: #d6d6d6; /* Background color for mobile */
         padding: 5px; 
     }
 
@@ -673,8 +706,100 @@ footer a {
         font-size: 16px;
     }
 
+    .risk {
+
+        flex-direction: column-reverse;
+        padding: 40px 5%;
+        width: 100%;
+
+    }
+
+    #risk-2{
+        flex-direction: column;
+    }
+
+    .risk-left, .risk-left-0{
+        background-color: rgb(238, 238, 238);
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+.risk-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.card-preview{
+    overflow-x: hidden;
+}
+.card-container{
+
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    padding: 5%;
+    max-width: 320px;
+    display: flex;
+
+
+
+}
+
+.img-card{
+    padding: 5%;
+    border-radius: 25px;
+max-height: 100px;
+}
+
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#img{
+    max-height: 250px;
+    min-height: 250px;
+
+}
+
+.img-2{
+    max-height: 100px;
+    min-height: 100px;
+}
+
+
+    .img{
+    
+        max-height: 200px;
+        min-height: 200px;
+    }
+
+    .risk-card-container{
+        background-color: #ffffff;
+    }
+
+    .img-track{
+        width: 320px;
+    }
+
+    #risk-2{
+        flex-direction: column-reverse;
+    }
+
+
+}
     
 @media screen and (max-width: 480px) {
     header {
@@ -717,5 +842,4 @@ footer a {
     #description {
         font-size: 14px;
     }
-}
 }
